@@ -1,0 +1,17 @@
+{
+    "experiments_dir": "output/train_240704_1006",
+    "enhancement_dir": "output/enhancement",
+    "model": {
+        "module": "model.default",
+        "main": "CRNN",
+        "args": {}
+    },
+    "dataset": {
+        "module": "dataset.wav_dataset_enhancement",
+        "main": "WavDataset",
+        "args": {
+            "mixture_dataset": "Data/cv/Noisy_test",
+            "limit": 400
+        }
+    }
+}
